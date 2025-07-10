@@ -1,8 +1,22 @@
 
 #countdown 10 to 0 second
 10-Math.floor(time);
-
+<br>
 # kode radial wipe for countdown
 let putaranPerDetik = 100; 
 let waktuSaatIni = time;
 (waktuSaatIni * putaranPerDetik) % 100;
+
+
+<br>
+#membuat titik titik gerak
+var baseText = "Charging"; // Ganti dengan teks dasar yang Anda inginkan
+    var speed = 2; // Ganti angka ini untuk mengatur kecepatan (semakin besar, semakin cepat)
+   
+    var dotCount = Math.floor((time * speed) % 4);
+    var dots = "";
+    for (var i = 0; i < dotCount; i++) {
+      dots += ".";
+    }
+   
+   baseText + dots;
