@@ -24,3 +24,18 @@ var baseText = "Charging"; // Ganti dengan teks dasar yang Anda inginkan
 #Untuk membulatkan angka dan mengontrol durasi per angka, kita akan sedikit modifikasi ekspresinya:
         <br>
 Math.floor(Math.max(0, thisComp.duration - time - thisComp.frameDuration * 0.5));
+
+
+
+#membuat text jalan
+<br>
+var baseText = "LOADING"; // Ganti dengan teks dasar yang Anda inginkan
+    var speed = 2; // Ganti angka ini untuk mengatur kecepatan (semakin besar, semakin cepat)
+   
+    var dotCount = Math.floor((time * speed) % 4);
+    var dots = "";
+    for (var i = 0; i < dotCount; i++) {
+      dots += ". ";
+    }
+   
+   baseText + dots;
