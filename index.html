@@ -158,7 +158,28 @@ roundedValue.toString() + "%";
 
 <!--   kode lain nya isi disini -->
 
-    <h2> kode apa</h2>
+    <h2> kode countdown ada 0 di depan</h2>
+    <pre><button class="copy-button">Copy</button>
+      <code>
+      // Mengambil nilai dari efek "Slider Control" di layer yang sama
+var slider = effect("Slider Control")("Slider");
+
+// Membulatkan nilai slider ke bilangan bulat terdekat
+var num = Math.round(slider);
+
+// Memastikan angka tidak menjadi negatif
+var finalCount = Math.max(0, num);
+
+// Logika untuk menambahkan '0' di depan jika angka di bawah 10
+if (finalCount < 10) {
+  "0" + finalCount;
+} else {
+  finalCount;
+}
+      </code>
+    </pre>
+  
+  <h2> kode apa</h2>
     <pre><button class="copy-button">Copy</button>
       <code>
       isi sini
